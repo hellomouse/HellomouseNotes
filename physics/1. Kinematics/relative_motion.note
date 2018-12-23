@@ -1,0 +1,36 @@
+TITLE Relative Motion
+NUMBER 3
+
+Motion can be considered from different "reference frames". For example, if you're in a car and you throw a ball forwards, you might say the ball is going forward at 5 m/s. But person outside the car seeing you zoom past might say it was going forward at 40 m/s.
+
+To the person outside the car, you appear to be moving forward at 35 m/s. To you, that person is moving backwards at 35 m/s, and you are standing still! In fact, to you, the entire Earth appears to move "backwards" at 35 m/s. 
+
+Basic reference frame math is just adding/subtracting, but what if we move into vectors?
+
+
+### Vectors for Reference Frames
+If we have 2 reference frames, we can just add vectors, just like (A = person outside, B = ball, C = car)
+
+$$V_{BA} = V_{BC} + V_{CA}$$
+
+Where $$V_{AB}$$ means "the velocity of A when viewed from the reference frame of B". In the example above, $$V_{BA}$$ means the velocity of the ball (B) when viewed by the outsider (A).
+
+We get 2 formulas using logic:
+$$V_{RB} = V_{RA} - V_{BR}$$
+$$V_{RB} = V_{RA} + V_{AB}$$
+
+A trick to remember is you *subtract* when the *R*s (objects) are on the outside, and *add* when the 2 *A*s are on the inside (reference frames). 
+
+
+### Problem:
+Relative to the Earth, Alice is running at <1.2696, 0.889>
+
+Relative to Alice, Bob is running at <0.32, -2.278>
+
+Relative to Bob, Carl is running at <0, 6>
+
+What is Carl's speed relative to the Earth?
+
+[A]
+$$V_{CE} = V_{AE} + V_{BA} + V_{CB} = <1.59, 4.611>$$
+[/A]

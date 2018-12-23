@@ -1,0 +1,43 @@
+TITLE Circular Motion
+NUMBER 2
+
+### Uniform Circular Motion
+In this case, we're moving in a circle at a constant speed. In order to do so, acceleration must be constant. 
+##### Proof:
+$$\Delta\vec{v} = \vec{v}_f - \vec{v}_i$$
+$$\vec{a} = \frac{\Delta\vec{v}}{\Delta t}$$
+
+![Diagram](/img/physics/circle-1.png "Diagram")
+
+Note the similar triangles, so we can state
+$$\frac{\Delta v}{v} = \frac{\Delta s}{r}$$
+Multiply by v, divide by delta t
+$$\frac{\Delta v}{\Delta t} = \frac{v \Delta s}{r\Delta t}$$
+
+Take the limit as time difference goes to 0 to get acceleration at that instant.
+$$\lim_{\Delta t\to0} \frac{v \Delta s}{r\Delta t}$$
+$$\lim_{\Delta t\to0} \frac{v}{r} \frac{\Delta s}{\Delta t}$$
+Note that the 2nd fraction is equal to velocity (A distance over time over a small distance). Thus we get
+
+$$\frac{v^2}{r}$$
+
+Thus in a case of uniform circular motion, there is a constant acceleration. Which way does it point? It must point towards the center.
+
+### Non-uniform Circular Motion
+A swing is a good example of this. The swing moves in a circular arc, but the velocity at a given point, or even the tension (centripetal acceleration) can vary depending on the location. 
+
+The acceleration formula above still applies, but only over an instant (The instantaneous velocity)
+
+**Example:** Imagine I'm swinging a ball in a circle with radius 100 m so that it's tangential  speed is accelerating at 5 m/s^2. At a given moment when its velocity is 25 m/s, what's its net acceleration (direction and magnitude)
+
+[A]
+The centripetal acceleration at the moment is (25 m/s)^2^ / 100 m = 6.25 m/s^2^. Centripetal and tangential acceleration are ALWAYS normal to each other (Circle chord theorem from geometry).
+
+Thus, the magnitude is
+$$\sqrt{6.25^2 + 5^2} = 8 m/s^2$$
+
+Direction is
+$$atan(5 / 6.25) = 38.66 \text{ degrees counterclockwise}$$
+
+_Note: it's convention that clockwise is negative rotation and counterclockwise is positive_
+[/A]
