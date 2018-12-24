@@ -18,7 +18,9 @@ The constant value depends on my variables. For example, for air, the equation i
 $$F_R = \frac{1}{2}DeAv^2$$
 
 D = Drag coefficent, which depends on shape of object
+
 e = Air density
+
 A = Cross sectional area
 [/FACT]
 

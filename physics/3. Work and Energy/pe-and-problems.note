@@ -1,0 +1,66 @@
+TITLE Potential Energy
+NUMBER 4
+
+Potential Energy is like "stored up energy". *Conservative forces* that are *path independent* conserve energy, for example, springs or gravity. Path independent simply means that the net work done to move an object from A to B is the same **regardless of what path you take.** 
+
+For example, with gravity, you can lift an object up, then drop it, and net work done is the same as if you had just dropped it! (Think about it)
+
+You can think of PE as the work done on an object to get it there, that's stored up. For example, if you lift a stone with mass *m* up *h* meters, it's PE is *mgh* because that's the work you spent to lift it. (Technically it's negative the work you've done since your force opposes gravity, and it's the work done by the conservative force)
+
+In general $$KE + PE = constant$$ if there's no external force that does work (ie friction)
+
+[DEF]
+**Common PE equations**
+- Gravity: $$mgh$$
+- Springs: $$\frac{1}{2}kx^2$$
+
+[/DEF]
+
+Yes, PE can be negative, but KE can't. You can convert between the 2, ie a stone dropped can start with PE = 10 J and KE = 0, and end with KE = 10 J and PE = 0 J, or even KE = 15 J and PE = -5 J. 
+
+Another thing is, the initial height could be set at any point. I could define y = 0 to be the starting height, so PE = 0 and KE = 0, then later PE = -10 and KE = 10, and it would be the same as the case above. Energy is just an abstract concept, so don't think too hard about this.
+
+What if there's energy lost, such as friction? Then you simply add the lost energy to the end, as in
+$$PE_i + KE_i = PE_f + KE_f + E_{lost}$$
+
+**Example:** A 500 kg roller coaster cart starts at h = 20 m, goes down a hill and at the bottom, collides into a spring with spring constant K = 1000 N/m. The work done by friction throughout the journey up until the spring is compressed to the max is -6000 J. What's the furthest the spring can be compressed?
+
+[A]
+Initial energy: $$PE = 20 * 500g = 98000 J$$
+
+When the spring is fully compressed, we note that the kinetic energy is 0 (All transferred into spring). Also PE is 0, since height is 0. We also need to account for the 6000 J lost to friction.
+
+$$98000 J = 6000 J + 0 J + 0 J + PE_{spring}$$ 
+$$PE_{spring} = \frac{1}{2}1000x^2$$
+
+We can solve for x, knowing everything else
+$$x = 13.56 m$$
+[/A]
+
+**Example:** A block attached to a spring is held out a distance of 0.4 m. The block is touching a floor with friction (kinetic, ignore static). The spring is let go. When does the block reach it's fastest speed, and what is this speed?
+- Mass block: 2 kg
+- Spring constant: 60 N/m
+- Friction coefficent: 0.3
+
+![Diagram](/img/physics/spring-1.png "Diagram")
+
+[A]
+You might be tempted to say the equilibrium position, but that's only true if there's no friction.
+
+Initial PE: $$\frac{1}{2}60 * 0.4^2 = 4.8J$$
+$$4.8 J = \frac{1}{2}2v^2 + \frac{1}{2}60x^2 + 2(0.3)(0.4-x)g$$
+
+(Last term is work done by fricion)
+
+You could ahead and try to solve that, but we note that the max speed occurs when the spring force equals the resisting friction force (Before that, the spring force can accelerate the block further, after that the friction begins slowing the block down).
+
+$$60x = 2(0.3)g, x = 0.098$$
+
+Thus, the max speed occurs at this distance from the equilibrium point (to the right).
+
+We can plug x back into the original equation and get
+
+$$4.8 J = \frac{1}{2}2v^2 + 0.288 J + 1.776 J$$
+$$\frac{1}{2}2v^2 = 2.736$$
+$$v = 1.65 m/s$$
+[/A]

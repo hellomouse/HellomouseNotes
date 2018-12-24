@@ -1,0 +1,43 @@
+TITLE Kinetic Energy and Work
+NUMBER 1
+
+### Work
+
+[DEF]
+Work is  $$F * d$$ and is measured in newton-meters (joules) (J). Technically, work is a dot product between the force vector and displacement vector.
+
+This is because only the force component parallel to the displacement does any work.
+[/DEF]
+
+**Classic Example:** A waiter holds a tray by applying a 2 N vertical force below the tray. How much work did the waiter do if he walks horziontally 10 m? How about when he descends a 10 m tall flight of stairs?
+
+[A]
+The horziontal motion is normal to the force vector, so no work is done. In the 2nd example, the displacement (down) is opposite of the force vector (up), so he does -10 * 2 = -20 J
+[/A]
+
+The work only applies to *one force.* To get net work done on an object, you need to add the sum of the work done by each force. Work is simply a change in kinetic energy.
+
+What if your force isn't constant? Then you can think of work as
+
+$$\int_{0}^{d} F(x) dx$$
+
+Where d is total displacement, x is your current displacement and F(x) returns force at that point
+
+### Kinetic Energy
+
+[DEF]
+$$KE = \frac{1}{2}mv^2$$
+[/DEF]
+
+**Example:** A 5 kg box (at rest) sits on a 40 degree frictonless incline that is 6 meters *long*. How fast will the box be going at the bottom? (No using potential energy, use work).
+
+[A]
+Gravity force along incline is $$5gsin(40) = 31.5 N$$. 
+Gravity acts over 6 meters, so net work done is $$31.5 * 6 = 189 J$$
+
+Initial KE is 0, so final KE is 0 + 189 = 189 J. Using the formula, 
+
+$$\frac{1}{2}5v^2 = 189$$
+$$v = 8.69 m/s$$
+[/A]
+

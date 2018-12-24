@@ -1,0 +1,20 @@
+TITLE Ideal Springs
+NUMBER 2
+
+[DEF]
+An ideal spring obeys Hooke's law:
+
+$$F_{spring} = -kx$$
+
+where k is a spring constant (N/m) and x is your displacement from equilibrium.
+[/DEF]
+
+**Example:** How much work would it take to displace a spring with spring constant 100 N/m 10 cm from the equilibrium?
+
+[A]
+For a general spring, work required is $$\int_{0}^{x} kx dx = \frac{1}{2}kx^2$$ 
+
+_(You're applying a force of positive kx to counter the force of -kx, hence the positive)_
+
+Thus, for our spring, it's 100 * 0.1^2^ = 1 J
+[/A]

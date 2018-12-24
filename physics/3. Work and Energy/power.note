@@ -1,0 +1,18 @@
+TITLE Power
+NUMBER 3
+
+[DEF]
+Power is the derivative (rate of change) of work, measured in J/s, or watts (W)
+
+Average power is simply $$W/\Delta t$$
+
+Innstantaneous power is $$\frac{dW}{dt}$$
+[/DEF]
+
+[FACT]
+Because $$P = \frac{dW}{dt} = F \cdot \frac{dx}{dt}$$, and since $$\frac{dx}{dt} = v$$, power is the same as $$F \cdot v$$ (Helpful formula)
+[/FACT]
+
+Some helpful conversions between common units:
+1. 1 hp (Horsepower) = 746 W
+2. 1 kW * hr (Kilowatt-hour) = 3.6E6 J
