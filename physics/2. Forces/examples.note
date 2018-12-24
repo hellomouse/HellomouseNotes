@@ -1,0 +1,82 @@
+TITLE Force Problems
+NUMBER 3
+
+### Example 1
+Find tension in the string as the system falls (The string supporting the pulley)
+
+![Diagram](/img/physics/dynamics-problem-1.png "Diagram")
+
+[A]
+You should be familiar with Atwood machines by now, so you should be able to find the tension in the string of the Atwood machine (We'll call this T_string) (Refer to formula derived previously:)
+
+$$2m_2m_1g / (m_2 + m_1)$$
+
+So $$T = 2 * 3 * 5 * 9.8 / (3 + 5 ) = 36.75$$
+
+Note that the top string only needs to support 2 times the tension of the string below, since the only forces acting on the pulley are *2 x T_string forces down* and *1 T_top force up*. Thus, the tension is
+
+$$2 * 36.75 = 73.5 N$$
+
+It's interesting, the tension force is LESS than 8g, which may be suprising since that's less than the total mass of the system.
+[/A]
+
+### Example 2
+Given the angle made with the vertical, find the speed of the pendulum.
+
+![Diagram](/img/physics/dynamics-problem-2.png "Diagram")
+
+[A]
+Note that $$r = Lsin(\theta)$$
+
+Let's define the tension force to be $$T$$. Since the mass isn't moving vertically, the vertical component $$Tcos(\theta)$$ and weight $$mg$$ must equal each other. Thus, $$T = \frac{mg}{cos(\theta)}$$
+
+The centripetal force component $$Tsin(\theta)$$ (Only the force component in the circle actually acts a centripetal force) must equal $$mv^2/r$$, or $$mv^2/(Lsin(\theta))$$. 
+
+Sub in $$T$$ and you get $$mgtan(\theta) = \frac{mv^2}{Lsin(\theta)}$$
+
+$$gtan(\theta) * Lsin(\theta) = v^2$$
+$$v = \sqrt{gtan(\theta) * Lsin(\theta)}$$ 
+
+Or, knowing $$Lsin(\theta) = r$$ write as
+$$v = \sqrt{gtan(\theta) * r}$$
+[/A]
+
+### Example 3
+Find the min speed that must be maintained while going around the circle to go around completely without falling (Maintain contact with track at all times)
+
+![Diagram](/img/physics/dynamics-problem-3.png "Diagram")
+
+[A]
+Imagine the ball at  the very top. The 2 forces acting on the ball, weight and the normal force, must add to equal the centripetal force. 
+
+$$mg + F_n = \frac{mv^2}{r}$$
+
+But if we only want the ball to barely touch the track, you can set the normal force to an infinitely small value (basically 0).
+
+$$mg = \frac{mv^2}{r}$$
+$$v = \sqrt{gr}$$
+[/A]
+
+### Example 4
+Find the max speed a car can turn on a banked track with radius R without slipping and shooting off the track. (Assume frictionless surfaces)
+
+![Diagram](/img/physics/dynamics-problem-4.png "Diagram")
+
+[A]
+The normal force is not what you'd expect, since we're in a circle, the inertia of motion forces the car against the track a bit harder. We note some force pair balances:
+
+$$F_n cos(\theta) = mg$$   
+
+(Vertical components balanced)
+
+Now that weight is canceled out with the normal force component, the only component that can act as a centripetal force is $$F_n sin(\theta)$$ (Suprising?)
+
+$$F_nsin(\theta) = \frac{mv^2}{r}$$
+
+You now have enough information to cancel out $$F_n$$ and solve for $$v$$
+
+Check your answer:
+$$v = \sqrt{grtan(\theta)}$$
+[/A]
+
+

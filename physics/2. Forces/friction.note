@@ -1,0 +1,11 @@
+TITLE Friction
+NUMBER 2
+
+### Static Friction
+Static friction acts when an object is not moving (Or rolling without slipping, more on that in rotations); it's usually stronger than kinetic friction. Static friction prevents an object from moving; up until a certain threshold, **it matches the force that's being applied**. 
+
+For example, if the max static friction force is 20 N, and I apply a 5 N force, the static friction force will be 5 N, so the object doesn't move. 
+$$\mu_s = \frac{F_{staticMax}}{F_n}$$
+
+### Kinetic Friction
+This is a constant force regardless of your speed, and acts when an object is in motion. 

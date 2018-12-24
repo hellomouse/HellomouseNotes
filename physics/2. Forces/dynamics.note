@@ -1,2 +1,64 @@
 TITLE Dynamics
-NUMBER 4
+NUMBER 1
+
+[DEF]
+**Dynamics:** The study of the cause and changes of motion
+[/DEF]
+
+[DEF]
+**Newton:** The unit of force. 1 N = 1 kg * m/s^2^. Force = mass x acceleration
+[/DEF]
+
+[DEF]
+**Net Force:** The sum of all forces acting on an object
+[/DEF]
+
+
+[DEF]
+**Equilibrium:** An object is said to be in equilibrium if all forces are balanced (Net force = 0)
+[/DEF]
+
+### "Classic" Dynamics Problems
+Find net acceleration in the cases below. Assume frictionless surfaces.
+
+![Diagram](/img/physics/dynamics-1.png "Diagram")
+
+Assuming the force is not strong enough to lift the box off the ground (In which case we would need rotation) the only component of the force acting in the x direction is $$Fcos(\theta)$$. Thus net force is $$\frac{Fcos(\theta)}{m}$$
+
+![Diagram](/img/physics/dynamics-2.png "Diagram")
+
+Gravity pulls straight down, but the ramp is blocking it. If you note the 2 components of gravity (Dotted lines) the only one acting downward is $$mgsin(\theta)$$. (The other component is canceled out with the normal force).
+
+![Diagram](/img/physics/dynamics-3.png "Diagram")
+
+_F_n = Normal force of the person_
+
+Net force is $$F_n - F_g$$, so net acceleration is $$\frac{F_n - F_g}{m}$$
+
+[FACT]
+The normal force is the weight that you feel, and the same weight that a scale measures. This is why you feel heavier when the elevator slows down going down or speeds up going up, and lighter when the elevator slows down going up or speeds up going down.
+[/FACT]
+
+![Diagram](/img/physics/dynamics-4.png "Diagram")
+
+Tension in a massless string is constant regardless where you are, so both blocks have the same upward tension force T. Since both blocks are connected, both have the same acceleration.
+
+Acceleration of block 1 (left):
+$$\frac{T - m_2g}{m_2}$$
+
+Acceleration of block 2 (right):
+$$\frac{m_1g - T}{m_1}$$
+
+Both are equal, so try to eliminate T:
+$$(m_1)(T - m_2g) = (m_2)(m_1g - T)$$
+$$m_1T - m_1m_2g = m_2m_1g - m_2T$$
+$$-m_1m_2g - m_2m_1g = -m_2T - m_1T$$
+$$2m_2m_1g = (m_2 + m_1)T$$
+
+You get a helpful equation
+$$2m_2m_1g / (m_2 + m_1) = T$$
+
+Sub this back into one of the original equations
+$$a = \frac{g(m_2 - m_1)}{m_2 + m_1}$$
+
+This makes sense; it's the net force on the system divided by the system's total mass.
