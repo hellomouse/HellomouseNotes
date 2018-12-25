@@ -1,0 +1,44 @@
+TITLE Center of Mass
+NUMBER 4
+
+[DEF]
+You can think of the center of mass as a weighted average of mass with position:
+
+$$\frac{\sum_{i=0}^{n}x_im_i}{\sum_{i=0}^{n}m_i}$$
+[/DEF]
+
+### Uniform Rod
+This would be true for a group of particles. But what about a continuous shape? Let's start with an uniform rod:
+
+$$\frac{1}{M}\int_{0}^{L} x dm$$
+
+Wait what's dm? dm is the change in mass with respect to x, or a density. Our rod is "1-D" so the density is really just $$\frac{M}{L}$$ (kg/m), which makes sense, when you multiply that by a length (dx) you get a mass for the "slice".
+
+$$\frac{1}{M}\int_{0}^{L} x \frac{M}{L}dx$$
+$$\frac{1}{L}\int_{0}^{L} x dx$$
+$$\frac{1}{L} [\frac{1}{2}x^2]_{0}^{L}$$
+$$\frac{1}{L} \frac{1}{2}L^2$$
+$$\frac{L}{2}$$
+
+The center of mass is in the middle of the rod, like we'd expect.
+
+### Non-Uniform Rod
+What if density isn't uniform? Ie, I have a density function $$\lambda = 5 + 6X$$? Well, same logic above:
+
+$$\frac{1}{\int_{0}^{L} (5+6x) dx} \int_{0}^{L} x (5+6x) dx$$
+
+### Properties of the center of mass
+- If you have a 2D shape, you can do each component (x, y, etc...) seperately.
+- Objects tend to rotate around the center of mass due to the lowest moment of inertia
+- You can balance an object on the center of mass. (Basically, imagine the mass is compressed into a point there)
+- While a diver might make a complex motion falling, the center of mass follows a simpe parabolic shape
+
+### Velocity of the center of mass
+The velocity of the center of mass of any group of particles (without external forces) is always the same, even if collisions occur! The velocity of the center is
+
+$$\frac{\sum_{i=0}^{n}m_iv_i}{\sum_{i=0}^{n}m_i}$$
+
+Similarily, the acceleration of the center of mass, if there is a net force, is 
+
+$$\frac{\sum F}{M}$$
+

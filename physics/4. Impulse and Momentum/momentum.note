@@ -1,0 +1,62 @@
+TITLE Momentum
+NUMBER 1
+
+While work and energy deal with distance, momentum and impulse deal with time.
+
+[DEF]
+**Impulse:** A force acting over a time: $$F \cdot t \text{ measured in } [N \cdot s]$$
+An impulse is a change in momentum, like how work is a change in energy. The symbol is *I*
+[/DEF]
+
+[DEF]
+**Momentum:** Mass times velocity. Like velocity, is a vector. Measures how "hard" an object is to stop. It's also equal to $$\int_{0}^{t} F(t) dt$$
+
+The symbol for momentum is *p*
+[/DEF]
+
+In general, momentum is conserved in a closed system (No weird outside stuff like immovable walls). More importantly, each component of momentum is conserved, so the x momentums add up to initial x momentum, same for y, z, etc...
+
+This is helpful in collisions or explosions.
+
+### Types of collisions:
+| Type                          | p conserved? | KE conserved?             |
+|-------------------------------|--------------|---------------------------|
+| Inelastic collision           | Y            | N                         |
+| Perfectly inelastic collision | Y            | N (Most KE lost possible) |
+| Elastic Collision             | Y            | Y                         |
+| Superelastic collision        | Y            | N (KE increases)          |
+
+Where does the missing KE go for inelastic collisions? It's lost as sound, heat, etc... when the objects combine.
+
+How could you create a superelastic collision? Example; 2 explosives collide, and the potential energy of the explosive is converted into KE.
+
+### Elastic Head on Collision
+Let's derive what my teacher calls *the double secret alternate energy equation for elastic head on collisions*. You have 2 objects:
+
+**Object 1:**
+- Mass *m1*
+- Initial velocity *v~1i~*
+
+**Object 2:**
+- Mass *m2*
+- Initial velocity *v~2i~*
+
+KE and p are conserved. Ok let's get started
+
+$$m_1v_{1i}^2 + m_2v_{2i}^2 = m_1v_{1f}^2 + m_2v_{2f}^2$$
+$$-m_1(v_{1f}^2-v_{1i}^2) = m_2(v_{2f}^2 - v_{2i}^2)$$
+$$-m_1(v_{1f}-v_{1i})(v_{1f}+v_{1i}) = m_2(v_{2f} - v_{2i})(v_{2f} + v_{2i})$$
+
+$$m_1v_{1i} - m_1v_{1f} = m_2v_{2i} - m_2v_{2f}$$
+$$-m_1(v_{1f} - v_{1i}) = -m_2(v_{2f} - v_{2i})$$
+
+Knowing the above is true, we can cancel that out from both sides of the factored KE equation:
+$$v_{1f}+v_{1i} = v_{2f} + v_{2i}$$
+$$v_{1f}-v_{2i} = v_{2f} - v_{1f}$$
+
+Or
+$$v_{1f}-v_{2i} = -(v_{1f} - v_{2f})$$
+
+In other words, the difference between velocities switches after the collision. Ie if the intial velocities were 10 m/s and -5 m/s (10 - (-5) = 15), then at the end, if the first mass has velocity x, then the other must have velocity (x + 15).
+
+

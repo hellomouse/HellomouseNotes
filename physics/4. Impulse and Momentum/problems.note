@@ -1,0 +1,38 @@
+TITLE Problems
+NUMBER 3
+
+### Problem 1: Ballastic Pendulum
+A bullet with mass *m* and velocity *v~0~* hits a pendulum with mass M and becomes embedded inside. The collision raises the pendulum to height h before it begins falling. What's the initial velocity v~0~ in terms of h?
+
+![Diagram](/img/physics/ballistic.png "Diagram")
+
+[A]
+You CAN use energy, but you can't simply equate both sides. First, determine the new velocity of the combined bullet-pendulum system.
+
+$$mv_0 = (m+M)v$$
+$$v = \frac{mv_0}{m+M}$$
+
+Use that kinetic energy and equate to gravitational potential:
+$$\frac{1}{2}(m+M)(\frac{mv_o}{m+M})^2 = (m+M)gh$$
+
+And solve for v~0~
+$$\frac{1}{2}(\frac{mv_o}{m+M})^2 = gh$$
+$$(\frac{mv_0}{m+M})^2 = 2gh$$
+$$\frac{mv_0}{m+M} = \sqrt{2gh}$$
+$$v_0 = \frac{m+M}{m}\sqrt{2gh}$$
+[/A]
+
+### Problem 2: Glancing Collision
+We'll consider 2 billard balls of equal mass on a frictionless surface, colliding in an elastic collision. They glance off each other, rebounding at an angle into new velocity vectors. Show that the angle between the 2 new velocity vectors is 90 degrees.
+
+![Diagram](/img/physics/glance1.png "Diagram")
+
+[A]
+Let's call initial velocity *v* and momentum *p*. Let's define after the collision to be *v1* and *v2*, and *p1* and *p2*.
+
+We know that $$p = p_1 + p_2$$ (Where p is a vector), and since both have the same mass, $$v = v_1 + v_2$$ (Vector addition). We also know KE is conserved, so $$\frac{1}{2}mv^2 = \frac{1}{2}m(v_1^2 + v_2^2)$$, or $$v_1^2 + v_2^2 = v^2$$
+
+![Diagram](/img/physics/glance2.png "Diagram")
+
+Since vectors can be added in any order, we can move vector v1 (diagram) below to form a triangle with sides v1, v2 and v. Since v~1~^2^+ v~2~^2^ = v^2^, which is only true in a right triangle, the angle must be a right angle.
+[/A]

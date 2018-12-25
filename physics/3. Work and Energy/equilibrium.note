@@ -4,13 +4,13 @@ NUMBER 5
 You may have noticed, the force of any conservative force is the negative derivative of the potential energy. For example,
 
 - **Springs:** $$-\frac{d}{dx}\frac{1}{2}kx^2 = -kx$$
-- **Gravity:** $$-\frac{d}{dh}mgh = mg$$
+- **Gravity:** $$-\frac{d}{dh}mgh = -mg$$
 
 This is true in general (See definition of potential energy)
 
 ### Equilibriums
 Let's say we graphed some position vs potential energy graph. There are some mins/maxes. We can define the following:
-- **Stable equilibrium:** A min, the lowest local potential energy. Objects naturally sek lower potential energy, like how water flows into valleys
+- **Stable equilibrium:** A min, the lowest local potential energy. Objects naturally seek lower potential energy, like how water flows into valleys
 - **Unstable equilibrium:** A max, if the potential energy is changed a tiny bit, it will be able to seek a lower equilibrium. Imagine a ball perfectly between 2 gravity fields, if you move it a bit, one gravity field will be stronger and pull it in.
 - **Neutral Equilibrium:** Potential energy is basically the same no matter if you move left or right, so object doesn't prefer to move or anything.
 
