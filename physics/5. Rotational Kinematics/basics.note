@@ -1,0 +1,25 @@
+TITLE Basics
+NUMBER 1
+
+[DEF]
+Rotational kinematics has many analogies to translational kinematics
+$$\theta = \text{angular position (Measured CC, rad)}$$
+$$\omega = \text{angular velocity (velocity, rad/s)}$$
+$$\alpha = \text{angular acceleration, rad}/s^2$$
+
+And some more we'll explain later:
+$$I = \text{Moment of inertia (Like mass, but rotational)}$$
+$$T = \text{Torque, like force, but rotational}$$
+$$L = \text{Angular mometum}$$
+
+All your formulas like $$\frac{1}{2}\alpha^2 + \omega t = \Delta \theta$$ work in the rotational world too, just sub in the analogous variables. 
+[/DEF]
+
+Since we're rotating on a circle, it might help to translate some numbers into more real world units we're used to like m/s. Here are some formulas that can do that:
+
+$$v_{tangential} = \omega r$$
+$$a_{tangential} = \alpha r$$
+$$a_{centripital} = r \omega^2$$
+
+Since we're working in radians, a lot of conversions with $$\pi$$ cancel out. You can derive these yourself using basic geometry.
+

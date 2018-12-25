@@ -1,0 +1,45 @@
+TITLE Angular Momentum
+NUMBER 5
+
+[DEF]
+$$L = I \omega$$
+(L is angular momentum)
+
+For a particle, L is $$r \times p$$ (Radius cross product p), or
+$$||L|| = mvRsin(\theta)$$
+
+Note: the radius is measured from the LINE of the particle's motion to the axis of rotation. 
+
+![Diagram](https://instructure-uploads.s3.amazonaws.com/account_13840000000000001/attachments/79813/ang_mom_3.png?response-content-disposition=attachment%3B%20filename%3D%22ang_mom_3.png%22%3B%20filename%2A%3DUTF-8%27%27ang%255Fmom%255F3.png&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJDW777BLV26JM2MQ%2F20181225%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20181225T212158Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=04f140092b8e1ba0c823b4ef2eb570bdd77aa07855e622590db8b9f62f0e587c)
+
+Like torque, you can use the right hand rule to get a direction for angular momentum. 
+[/DEF]
+
+### Gryoscopes
+A classic example is a wheel hanging on a pivot like in the diagram below:
+
+![Diagram](/img/physics/gyro1.png)
+
+You'd expect the wheel to just fall like this, and you'd be right.
+
+![Diagram](/img/physics/gyro2.png)
+
+This would be true... only if the wheel wasn't spinning. If the wheel was spinning, it would in fact be staying up right, and going around in circles! Here's a video that better demonstrates it.
+
+[INTERACTIVE https://www.youtube.com/embed/8H98BgRzpOM 400 300]
+
+But WHY does this happen? While it's hard to explain intuitively (Unless perhaps you're familiar with orbital dynamics), it's easy to understand with vectors! Let's consider the torque gravity causes: 
+
+![Diagram](/img/physics/gyro3.png)
+
+Using the right hand rule, the torque vector points out from the screen. Now torque is like a force, and changes the direction of L. If you add T with L, then you get a new vector for L. Let's consider the wheel is spinning AWAY from us (into the screen), and consider the direction of L:
+
+![Diagram](/img/physics/gyro4.png)
+
+The new direction of L after creating this torque is this:
+
+![Diagram](/img/physics/gyro5.png)
+
+Here's the thing though: the L vector is ALWAYS perpendicular to the plane the wheel is rotating in. So the wheel can no longer continue rotating in its original plane; it must rotate now to be normal to the new L vector. So the direction it ends up turning around defting gravity. This is called gryoscopic precession, and the speed of this is simply the ratio of torque to angular momentum $$(T/L)$$
+
+This is similar to how a mass behaves in a gravity field: if the mass has no initial momentum, it would just fall to the center of the gravity field, but if it has an initial velocity, it can orbit the center and never fall in.

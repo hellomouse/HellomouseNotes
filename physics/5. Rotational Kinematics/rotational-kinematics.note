@@ -1,0 +1,66 @@
+TITLE Rotational Kinematics
+NUMBER 4
+
+Rolling without slipping simply means that the point of contact, relative to the ground, remains stationary (The point that touches the ground never "slides" along it).
+
+Another way to think about it is that the tangential velocity at the bottom is equal to the translational velocity of the entire object.
+
+![Diagram](/img/physics/roll1.png "Diagram")
+
+_Note how they add together and the velocity at the bottom is 0_
+
+### Rolling down an incline
+Now, to rotate, a torque must exist. What torque exists? Not gravity; it acts at the center of mass, so no torque can be applied (r=0). A friction force, in fact, acts as torque (Static friction, since there is no velocity at the bottom).
+
+![Diagram](/img/physics/roll2.png "Diagram")
+
+Static friction, acting infinitely many times over infinitely small time intervals when a part of the object touches the ground, applies a torque as the object rolls down the hill. If the static friction force is sufficent, the torque will allow the object to roll without slipping.
+
+Now, what's the acceleration of this object rolling? Since moments of inertia are usually in the form $$\beta MR^2$$, we can call $$\beta$$ a "shape factor" for any round object.  
+
+$$mgsin(\theta) - f_s = ma$$
+$$f_sR = I\alpha = I\frac{a}{R} = \beta mR^2 \frac{a}{R} = \beta mRa$$
+$$f_s = \beta ma$$
+$$mgsin(\theta) - \beta ma = ma$$
+$$gsin(\theta) = a + \beta a$$
+$$a = \frac{gsin(\theta)}{1+\beta}$$
+
+### Rolling on a flat surface
+Friction is also needed to roll on a flat surface IF there isn't rolling without slipping initially. If there is too much translational velocity at first, the object slips and *kinetic friction* begins applying a torque.
+
+Once the system reaches an "equilibrium" between rolling and translational velocity, static friction takes over. Static friction is 0 since there's no force for static friction to oppose (Like a box without any force acting on it won't have a static friction force). 
+
+In theory, the object would roll forever, but in real life objects aren't perfectly round, and surfaces aren't perfectly smooth, so collisions with bumps and microscopic sliding will slow the object down.
+
+### Time to reach rolling without slipping (flat surface)
+We could do this with angular momentum technically, but we haven't learned that yet :)
+
+Let's ask how long it takes a solid sphere (I = 2/5 MR^2^) to reach rolling without slipping. Rolling without slipping is achieved when $$R \omega = v$$
+
+The only force is kinetic friction right now, so 
+$$-f_k = ma$$
+$$f_kR = \frac{2}{5}MR^2 \alpha$$
+$$\alpha = \frac{5 f_k}{2R}$$
+
+Meanwhile, translational acceleration is simply
+$$- \mu_kg$$
+
+If we started with $$v_f$$ and rotational velocity 0, then after t seconds,
+$$v = v_f - \mu_kgt$$
+$$\omega = \frac{5 f_k}{2R}t$$
+
+We want the two to be equal
+$$v_f - \mu_kgt = R\frac{5 f_k}{2R}t$$
+$$t = \frac{2v_0}{7\mu_kg}$$
+
+### Energy of Rolling
+Suppose an object rolls down an incline without slipping, starting at height h. What's the speed at the bottom? (Assume shape factor of $$\beta$$) (It's not $$\sqrt{2gh}$$)
+
+[A]
+We also need to account rotational energy into this.
+
+$$\frac{1}{2}mv^2 + \frac{1}{2}\beta m r^2 \frac{v^2}{r^2} = mgh$$
+$$v^2 + \beta m v^2= 2gh$$
+$$v =\sqrt{\frac{2gh}{1 + \beta}}$$
+[/A]
+

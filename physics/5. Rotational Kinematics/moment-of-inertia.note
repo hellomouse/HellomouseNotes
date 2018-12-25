@@ -1,0 +1,77 @@
+TITLE Moment of Inertia
+NUMBER 2
+
+If you imagine an object of being made of a bunch of small "particles", you can imagine the total kinetic energy of the object to be the sum of each kinetic energy, or
+
+$$\sum \frac{1}{2}m_iv_i^2$$
+
+Well, $$v = \omega r$$ so
+
+$$\frac{\omega^2}{2} \sum m_ir^2$$ 
+
+would be your kinetic energy. If we think that $$KE = \frac{1}{2}mv^2$$, then it would make sense for the term $$\sum m_ir^2$$ to be some rotational analog of mass. And it is, it's called the moment of inertia, which is how "hard" it is to rotate something.
+
+$$KE = \frac{1}{2} I\omega^2$$
+
+Or for an individual particle:
+$$KE = mr^2$$
+
+(Where r is the radius to center of rotation)
+
+### A note about axis of rotation
+The axis of rotation is a straight line, not a point! So the shortest distance to the line is your radius! See the diagram below.
+
+![Diagram](/img/physics/cm.png "Diagram")
+
+### Parallel Axis Theorem
+If we're NOT rotating along the center of mass, the moment of inertia changes. The moment of inertia then becomes $$I = I_{center of mass} + Md^2$$ (M is total mass of object, d is distance to center of mass)
+
+### Finding Moment of Inertia of Rods
+Integrate the rod over the moment of inertia of a particle. This CHANGES depending on where your axis of rotation is!
+
+For example, what's the moment of a uniform rod length L along it's center of rotation? We notice it's symmetrical, so we can find one half and double it.
+
+$$2 \int_{0}^{\frac{L}{2}} r^2 \frac{M}{L} dx$$
+
+$$2\frac{M}{L} \int_{0}^{\frac{L}{2}} (\frac{L}{2} - x)^2 dx$$
+
+(It's _symmetrical_, so we could technically do $$x^2$$ instead. Draw a diagram and see why)
+
+$$2\frac{M}{L} \int_{0}^{\frac{L}{2}} x^2 dx$$
+
+$$2\frac{M}{L} \frac{L^3}{24}$$
+$$\frac{ML^2}{12}$$
+
+Which is what it says in the diagram below.
+
+### Common Moment of Inertias
+Here's a chart. You don't need to memorize them, but you'll probably memorize them automatically after using them for a while. 
+
+![Diagram](http://hyperphysics.phy-astr.gsu.edu/hbase/imgmec/mic.png "Diagram")
+
+### Example Problem
+A mass with mass _m_ hangs from a pulley with radius R. The pulley rotates as the mass descends. 
+
+- m = 0.02 kg
+- R = 0.075 m
+- The mass descends 1 m in 3 s
+
+Find the moment of inertia of the pulley
+
+[A]
+Calculate the acceleration: 
+$$\frac{1}{2}a3^2 = 1$$
+$$a = 0.22 m/s^2$$
+
+Note the following: (T is tension in string)
+$$ma = mg - T = 0.22(0.02), mg = 0.196$$
+$$T = 0.1916$$
+
+The tangential acceleration of a point on the rim of the pulley must be the same as a, so
+$$\alpha = \frac{0.22}{R} = 2.93$$
+
+The net torque ($$I \alpha$$) is equal to $$TR$$, so subbing this all together:
+$$2.93 I = 0.1916 \times 0.075$$
+$$I = 0.00485 \text{ N} \cdot m$$
+[/A]
+

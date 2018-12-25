@@ -1,0 +1,37 @@
+TITLE Static Equilibrium
+NUMBER 6
+
+We add a new condition to equilibrium: torque must also be balanced. (Thus we can't consider objects as single particles anymore). Note: the pivot you choose for the torque doesn't matter. There's some theorem that says if the torque is balanced along 1 pivot, it's balanced along any pivot, so you only need to show torque is balanced for 1 pivot. Choose a pivot that makes stuff easy (ie cancels out torques for unknown forces)
+
+### Example 1
+Imagine a see-saw that's 6 m long, balanced on a pivot in the middle. The see-saw weighs 40 kg. A 30 kg child sits on one end of the see-saw. Where should you place a 50 kg child to have the lever balanced, and what's the normal force at the pivot?
+
+[A]
+To find the normal force, note the vertical forces must be balanced. So
+$$F_n = 50g + 30g + 40g = 120g$$
+
+To find where to place the child, you'll have to balance the torque. I chose the middle to be the pivot (You could really choose anywhere). The weight of the see-saw has 0 torque, the 50kg child has torque $$-30g (3m)$$ and the 50kg child $$50g(x)$$. Solve for x, you get 1.8 meters to the left of the pivot.
+[/A]
+
+### Example 2
+
+![Diagram](/img/physics/sign.png)
+
+Given the following sign is hung on a rod that can rotate along a pivot and is held in place by a string. What is
+1. The tension in the string
+2. The x and y forces on the pivot?
+
+[A]
+Note that there are unknown forces acting on the pivot against the wall, so we can't balance forces like we normally can. But we can balance torque. If we set the pivot to be the pivot, then
+
+$$10g(0.3) + 5g (1) + 10g(1.7) = 2Tsin(40)$$
+$$T=190.6 N$$
+
+Note that the weight of the sign is distributed over the 2 strings, and only the vertical component of the tension counts for torque.
+
+To get the forces at the pivot:
+
+- **x force:** The only x force that needs balancing is the x component of tension, which is $$190.6cos(40) = 146 N$$. Thus to counter this force and make net x force 0, the pivot must exert a rightward force of 146 N
+- **y force:** The current net y force is $$-20g - 5g + 190.6sin(40) = -122.5 N$$ Thus the pivot must exert a force of 122.5 N upwards to make net y force 0
+
+[/A]

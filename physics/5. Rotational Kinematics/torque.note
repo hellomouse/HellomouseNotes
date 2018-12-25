@@ -1,0 +1,32 @@
+TITLE Torque
+NUMBER 3
+
+Torque is a force that causes rotation. It's technically defined as a vector cross product, where
+$$T = r \times f$$
+
+_(Order matters in the cross product!)_
+
+![Diagram](/img/physics/torque.png "Diagram")
+
+If you only want the absolute value, then it's the perpendicular component of force to radius (or perpendicular component of radius to force, which ever is easier) times force, or
+
+$$||T|| = Frsin(\theta)$$
+
+which is may how you have seen it before.
+
+### Cross Product and Right Hand Rule
+
+The cross product yields a 3D direction, but what does it even mean? It's an abstract idea, where the direction represents the rotational direction.
+
+![Diagram](/img/physics/right-hand-rule.png "Diagram")
+
+Align your *right hand* with the radius vector, then curl your fingers in the direction of the force (You may need to rotate your hand to do this.) Now, whichever direction (up or down) your thumb is pointing is the direction of T.
+
+If T points into the page (down), then the torque causes a clockwise rotation (negative torque), if it points out, it causes positive torque (CCW rotation)
+
+### Other Formulas
+Being analogous to force, all formulas apply:
+
+$$\sum T = I \alpha$$
+$$W = T \Delta \alpha$$
+$$P = T \cdot \omega$$
